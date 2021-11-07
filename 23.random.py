@@ -15,27 +15,27 @@ import string
 # slovo = input()
 # print(*random.sample(slovo,len(slovo)), sep='')
 
-matrix = [[0] * 5 for i in range(5)]
-numbers = []
-a = 0
-while a != 24:
-    num = random.randint(1,75)
-    if num not in numbers:
-        numbers.append(num)
-        a += 1
-for i in range(5):
-    lst = []
-    for j in range(5):
-        if i == 2 == j:
-            matrix[i][j] = 0
-        else:
-            num = numbers.pop()
-            matrix[i][j] = num
-
-for i in range(5):
-    for j in range(5):
-        print(str(matrix[i][j]).ljust(3), end='')
-    print()
+# matrix = [[0] * 5 for i in range(5)]
+# numbers = []
+# a = 0
+# while a != 24:
+#     num = random.randint(1,75)
+#     if num not in numbers:
+#         numbers.append(num)
+#         a += 1
+# for i in range(5):
+#     lst = []
+#     for j in range(5):
+#         if i == 2 == j:
+#             matrix[i][j] = 0
+#         else:
+#             num = numbers.pop()
+#             matrix[i][j] = num
+#
+# for i in range(5):
+#     for j in range(5):
+#         print(str(matrix[i][j]).ljust(3), end='')
+#     print()
 #4
 #letters = []
 # def generate_index():
@@ -59,3 +59,14 @@ for i in range(5):
 #         lst.append(stroka)
 #
 # print(*lst, sep='\n')
+
+# n = int(input())
+# lst = [input() for i in range(n)]
+# lst2 = lst.copy()
+# i = 0
+# while lst[i] != lst2[i]:
+#     random.shuffle(lst2)
+#for i in range(len(lst)):
+#    print(lst[i],'-', lst2[i])
+
+
