@@ -67,35 +67,36 @@
 
 
 
-def is_valid_password(password):
-    password = [int(i) for i in password.split(":")]
+# def is_valid_password(password):
+#     password = [int(i) for i in password.split(":")]
+#
+#     def is_prime(num):
+#         if num == 1:
+#             return False
+#         for i in range(2, password[1]):
+#             if num % i == 0:
+#                 return False
+#         return True
+#
+#
+#     a = str(password[0])[::-1]
+#     b = password[1]
+#     c = password[2] % 2
+#     print()
+#     if 3 > len(password) > 3:
+#          return False
+#     # elif a == password[0] and c % 2 == 0;
+#     # return True
+#
+#
+# # считываем данные
+# # psw = '1221:101:22'
+#
+# # вызываем функцию
+# print(is_valid_password(psw))
+#
+#
 
-    def is_prime(num):
-        if num == 1:
-            return False
-        for i in range(2, password[1]):
-            if num % i == 0:
-                return False
-        return True
 
-
-    a = str(password[0])[::-1]
-    b = password[1]
-    c = password[2] % 2
-    print()
-    if 3 > len(password) > 3:
-         return False
-    # elif a == password[0] and c % 2 == 0;
-    # return True
-
-
-# считываем данные
-psw = '1221:101:22'
-
-# вызываем функцию
-print(is_valid_password(psw))
-
-
-
-
+# num = int(input())
 
