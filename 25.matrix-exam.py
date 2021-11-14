@@ -77,15 +77,18 @@
 #
 # print(flag)
 
-n = int(input())
-matrix = [input().split() for i in range(n)]
-for i in range(n):
-    matrix[i] = set(matrix[i])
+# n = int(input())
+# matrix = [input().split() for i in range(n)]
+# for i in range(n):
+#     matrix[i] = set(matrix[i])
+#
+# for i in range(1, n+1):
+#     if matrix[0] == matrix[n-i]:
+#         flag = 'YES'
+#     else:
+#         flag = 'NO'
+#         break
+# print(flag)
 
-for i in range(1, n+1):
-    if matrix[0] == matrix[n-i]:
-        flag = 'YES'
-    else:
-        flag = 'NO'
-        break
-print(flag)
+n = input()
+print(n)
