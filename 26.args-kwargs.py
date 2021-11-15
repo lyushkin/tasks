@@ -21,12 +21,25 @@
 #         return 0.0
 
 
-def greet(*args):
-    if len(args) < 1:
-        return (f"Hello{args}!")
-    else:
-        return ('Hello, ', *args)
+# def greet(name, *args):
+#     if len(args) == 0:
+#         stroka = 'Hello,' + name + '!'
+#         return stroka
+#     else:
+#         stroka = 'Hello, '  + name + ' and ' + ' and '.join(args) + '!'
+#         return stroka
 
-print(greet('Timur'))
-print(greet('Timur', 'Roman'))
-print(greet('Timur', 'Roman', 'Ruslan'))
+
+
+def print_products(*args):
+    count = 0
+    for i in args:
+        if type(i) is str and i != '':
+            count += 1
+            print(count, ') ', i, sep='')
+    if count == 0:
+        print('Нет продуктов')
+
+
+print_products('Бананы', [1, 2], ('Stepik',), 'Яблоки', '', 'Макароны', 5, True)
+
